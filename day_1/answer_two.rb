@@ -1,6 +1,6 @@
 require 'csv'
 
-depths = csv.read('day_1/depths.csv').flatten.map(&:to_i)
+depths = CSV.read('day_1/depths.csv').flatten.map(&:to_i)
 
 # group numbers by 3
 # compare each group to previous group

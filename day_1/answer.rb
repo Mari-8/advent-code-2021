@@ -1,6 +1,6 @@
 require 'csv'
 
-depths = csv.read('day_1/depths.csv').flatten.map(&:to_i)
+depths = CSV.read('day_1/depths.csv').flatten.map(&:to_i)
 
 # loop over each item in depths 
 # compare current item to previous item 
