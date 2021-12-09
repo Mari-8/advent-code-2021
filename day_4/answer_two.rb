@@ -1,4 +1,4 @@
-require_relative 'bingo'
+require_relative "bingo"
 
 lines = File.readlines("#{__dir__}/boards.txt", chomp: true)
 
@@ -8,8 +8,9 @@ boards =
     board = Bingo::Board.new(rows)
   end 
 
-score = Bingo.find_winning_score(boards) 
+
+score = Bingo.find_losing_score(boards) 
+
+binding.irb
 
 puts score
-
-
